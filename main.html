@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <script src="resources/js/jquery.min.js"></script>
+    <script>
+      function addContent(abc) {
+        $('#content').append('<div>' + abc + '</div>');
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <h1>Latest Tutorials on Tutorialzine</h1>
+
+    <div id="content">
+      <script>
+        var bgPage = chrome.extension.getBackgroundPage();
+        document.write(bgPage.i + ' : value of i');
+      </script>
+    </div>
+  </body>
+</html>
